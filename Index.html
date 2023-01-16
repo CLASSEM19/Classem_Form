@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASSEM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style ="background-color:rgb(1, 1, 1)";>
+    <fieldset>
+        <h2 style="text-align: center; text-decoration: underline;background-color:blue;color:black;" >CLASSEM FORM</h2>
+        <div style="display: flex;gap:20%;"->
+            <span></span>
+            <p>
+                <label style="color:blue" for="fname">FIRST NAME</label><br>
+                <input type="text" placeholder="Enter FirstName" name="FirstName" required>
+            </p>
+            <!-- <span>
+            </span> -->
+            <p>
+                <label style="color:blue" for="lname">LAST NAME</label><br>
+                <input type="text" placeholder=" Enter LastName" name="LastName" minlength="5" size="20" required >
+            </p>
+        </div>
+        <div style="display: flex;gap:20%;">
+            <span>
+            </span>
+            <p>
+                <label style="color:blue" for="dob">DATEofBIRTH</label><br>
+                <input type="date" name="dd/mm/yyy"required>
+            </p>
+            <!-- <span>
+            </span> -->
+            <p>
+                <label style="color:blue" for="month" class ="input-tag-reg-month">REG. MONTH</label><br>
+                <input style="color:red"type="text" placeholder="" name="Regmonth"required class="input-tag-reg-month">
+            </p>
+        </div>
+        <div style="display: flex;gap: 20%;">
+            <span>
+            </span>
+            <p>
+                <label style="color:blue"for="password">PASSWORD</label><br>
+                <input style="color:red"type="password" placeholder="password" name="password"required>
+            </p>
+            <p>
+                <label style="color:blue"for="confirm password"> CONFIRM PASSWORD</label><br>
+                <input style="color:red"type="password" placeholder=" Confirm password" name=" Confirm password"required>
+            </p>
+        </div>
+        <div style="display: flex;gap:20%;">
+            <span>
+            </span>
+            <p>
+                <label style="color:blue"for="gender">GENDER</label><br>
+                <select style="color:red"id="gender" name="gender"required>
+                    <option disabled value="gender">--Gender--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </p>
+            <p>
+                <label style="color:blue"for="age" class="input-tag-reg-Age">AGE</label><br>
+                <input style="color:red"type="number" placeholder="age" name="Age" min="18" max="50" required class="input-tag-reg-Age">
+                <label style="color:blue"for="age" class="input-tag-reg-btw"> AGE(btw 18 & 50)</label>
+            </p>
+        </div>
+        <div style="display: flex;gap:20%;">
+            <span>
+            </span>
+            <p>
+                <label style="color:blue"for="level">LEVEL</label><br>
+                  <input type="radio" id="primary" name="LEVEL" value="Primary">
+                  <label style="color:blue"for="primary">Primary</label>
+                <input type="radio" id="secondary" name="LEVEL" value="Secondary">
+                  <label style="color:blue"for="html">Secondary</label>
+                  <input type="radio" id="Tertiary" name="LEVEL" value="Tertiary">
+                  <label style="color:blue"for="tertiary">Tertiary</label>
+            </p>
+            <p>
+                <label style="color:blue"for="categories">CATEGORIES</label><br>
+                <input type="checkbox" id="art" name="art" value="Art">
+                <label style="color:blue"for="vehicle1"> Art</label><br>
+                <input type="checkbox" id="fashion" name="fashion" value="Fashion">
+                <label style="color:blue"for="vehicle2">Fashion</label><br>
+                <input type="checkbox" id="music" name="music" value="Music">
+                <label style="color:blue"for="vehicle3">Music</label>
+            </p>
+        </div>
+        <div style="display: flex;gap:20%;">
+
+            <span>
+            </span>
+            <span>
+                <label style="color:blue"for="address">ADDRESS</label><br>
+                <span>
+                <fieldset>
+                    <textarea style="background-color:blue;color:red;" name="Address" id="Address" cols="90" rows="/"required>
+                    </textarea>
+                </fieldset>
+            </span>
+        </div>
+        <div class="submit-btn" >
+            <input style="color:blue"type="submit" value="SUBMIT" >
+        </div>
+        
+    </fieldset>
+</body>
+</html>
